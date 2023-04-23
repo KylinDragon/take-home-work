@@ -23,5 +23,13 @@ RUN apt install -y --no-install-recommends xclip
 RUN sed -i 's;^.*\(c\.NotebookApp\.allow_root\).*$;\1 = True;' $NB_CFG
 RUN pip install bash_kernel && python -m bash_kernel.install
 
-RUN apt clean && rm -rf /var/lib/apt/lists/*
+# Install basic packaging software
+RUN apt install -y --no-install-recommends gnupg
+RUN apt install -y --no-install-recommends pbuilder
+RUN apt install -y --no-install-recommends devscripts
+RUN apt install -y --no-install-recommends ubuntu-dev-tools
+RUN apt install -y --no-install-recommends apt-file
+RUN apt install -y --no-install-recommends quilt
 
+# RUN apt clean && rm -rf /var/lib/apt/lists/*
+# USER ${NB_UID}
