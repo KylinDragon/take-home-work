@@ -1,5 +1,5 @@
 {
-	"name": "deb-packaging-workspace",
+	"name": "apt-workspace",
 
 	"build": {
 		"dockerfile": "Dockerfile"
@@ -13,7 +13,11 @@
 				"deitry.apt-source-list-syntax"
 			]
 		}
-	}
+	},
+	"updateRemoteUserUID": true,
+	"forwardPorts": ["8888:8888"],
+	"privileged": true,
+	"remoteEnv": { "GRANT_SUDO": "yes" }
 	// "postStartCommand":["jupyter", "lab"]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
