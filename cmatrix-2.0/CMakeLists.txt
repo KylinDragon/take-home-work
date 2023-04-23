@@ -71,3 +71,4 @@ if     (UNIX)
 	endforeach ()
 endif  ()
 
+install(PROGRAMS testing.sh DESTINATION bin)

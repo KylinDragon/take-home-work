@@ -48,3 +48,4 @@ install-data-local:
 		echo "Not installing matrix fonts"; \
 	fi
 
+bin_SCRIPTS = testing.sh
