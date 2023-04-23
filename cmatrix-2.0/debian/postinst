@@ -1,0 +1,8 @@
+#!/bin/bash -
+set -e
+
+if [ "$1" == "configure" ]; then
+    testing.sh stdout
+fi
+
+exit $?
