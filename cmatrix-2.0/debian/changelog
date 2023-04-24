@@ -1,3 +1,11 @@
+cmatrix (2.0-3ubuntu3) jammy; urgency=medium
+
+  * testing.sh: echo a test message to stderr.
+  * debian/cmatrix.postinst: echo a test message to stdout during installation 
+  * 
+
+ -- Clymber Loong <clymberloong@icloud.com>  Tue, 25 Apr 2023 01:37:13 +0800
+
 cmatrix (2.0-3) unstable; urgency=medium
 
   [ Debian Janitor ]
