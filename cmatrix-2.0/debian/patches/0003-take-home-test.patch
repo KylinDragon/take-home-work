@@ -26,17 +26,6 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  
 +bin_SCRIPTS = testing.sh
 --- /dev/null
-+++ b/debian/cmatrix.postinst
-@@ -0,0 +1,8 @@
-+#!/bin/bash -
-+set -e
-+
-+if [ "$1" == "configure" ]; then
-+    testing.sh stdout
-+fi
-+
-+#DEBHELPER#
---- /dev/null
 +++ b/testing.sh
 @@ -0,0 +1,11 @@
 +#!/bin/bash -
