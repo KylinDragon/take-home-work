@@ -1,3 +1,9 @@
+cmatrix (2.0-3ubuntu4ppa1~ubuntu22.04.1) jammy; urgency=medium
+
+  * adjust the version number to ppa platform
+
+ -- Clymber Loong <clymberloong@icloud.com>  Tue, 25 Apr 2023 23:53:29 +0800
+
 cmatrix (2.0-3ubuntu3) jammy; urgency=medium
 
   * testing.sh: echo a test message to stderr.
